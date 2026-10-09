@@ -1,0 +1,76 @@
+/* page */
+body {
+  margin: 20px;
+  background-color: lightblue;
+  font-family: "Times New Roman";
+}
+
+/* title */
+h1 {
+  margin-bottom: 30px;
+}
+
+/* game layout */
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+/* game status */
+.status {
+  margin-bottom: 10px;
+}
+
+/* board rows */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* squares */
+.square {
+  background-color: white;
+  border: 1px solid black;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  color: black;
+}
+
+/* winning squares */
+.winner-square {
+  background-color: yellow;
+}
+
+/* the moce history */
+.game-info {
+  margin-left: 30px;
+}
+
+.game-info li {
+  margin-bottom: 5px;
+}
+
+/* the sort button */
+.sort-button {
+  margin-bottom: 10px;
+}
+
+/* this is for mobile */
+@media screen and (max-width: 600px) {
+  .game {
+    flex-direction: column;
+  }
+
+  .game-info {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
